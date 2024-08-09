@@ -1,0 +1,7 @@
+<!--pages/user/user.wxml-->
+<text>pages/user/user.wxml</text><van-nav-bar 
+  border="{{false}}"
+  title="用户界面"
+  placeholder
+  fixed
+/>

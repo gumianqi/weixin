@@ -1,0 +1,73 @@
+<van-nav-bar 
+  border="{{false}}"
+  title="项目名称"
+  placeholder
+  fixed
+/>
+
+<scroll-view 
+  scroll-y 
+  enhanced 
+  show-scrollbar="{{false}}" 
+  style="height: {{scrollHeight}}rpx;overflow: auto;"
+>
+<view class="search">
+  <navigator url="/pages/search/search" class="search-nav">
+    <image src="/images/search.png" mode="aspectFit"/>
+    <text>搜索你感兴趣的···</text>
+  </navigator>
+  <view class="search-nav">
+    <image src="/images/更多.png" mode="aspectFit"/>
+    <text>可补充区域</text>
+  </view>
+</view>
+
+<view class="tabs" style="position: relative;top: 10rpx;background-color: #f8f8f8;">
+  <van-tabs 
+    active="{{ active }}" 
+    line-height="0"
+    title-active-color="balck"
+  >
+    <van-tab title="标签 1" >
+      <van-grid column-num="2" gutter="{{10}}rpx">
+        <van-grid-item use-slot wx:for="{{posts}}" wx:key="id" url="/pages/search/search">
+          <image src="{{item.img}}" mode="widthFix" style="width: 100%;height: 180rpx;"/>
+          <text class="van-ellipsis" style="width: 330rpx;">{{item.text}}</text>
+        </van-grid-item>
+      </van-grid>
+    </van-tab>
+    <van-tab title="标签 2">内容 2</van-tab>
+    <van-tab title="标签 3">内容 3</van-tab>
+    <van-tab title="标签 4">内容 4</van-tab>
+    <van-tab title="标签 5">内容 5</van-tab>
+    <van-tab title="标签 6">内容 6</van-tab>
+    <van-tab title="标签 7">内容 7</van-tab>
+    <van-tab title="标签 8">内容 8</van-tab>
+  </van-tabs>
+</view>
+
+</scroll-view>
+
+<!-- <view class="tabs">
+  <van-tabs active="{{ active }}">
+    <van-tab title="标签 1">
+    <scroll-view scroll-y enhanced show-scrollbar="false" style="height:{{scrollHeight}}rpx;background-color: #efefef;overflow: auto;">
+      <van-grid column-num="2" gutter="{{10}}rpx">
+        url="/pages/search/search"
+        <van-grid-item use-slot wx:for="{{posts}}" wx:key="id" >
+          <image src="{{item.img}}" mode="widthFix" style="width: 100%;height: 180rpx;"/>
+          <text class="van-ellipsis" style="width: 330rpx;">{{item.text}}</text>
+        </van-grid-item>
+      </van-grid>
+    </scroll-view>
+    </van-tab>
+    <van-tab title="标签 2">内容 2</van-tab>
+    <van-tab title="标签 3">内容 3</van-tab>
+    <van-tab title="标签 4">内容 4</van-tab>
+    <van-tab title="标签 5">内容 5</van-tab>
+    <van-tab title="标签 6">内容 6</van-tab>
+    <van-tab title="标签 7">内容 7</van-tab>
+    <van-tab title="标签 8">内容 8</van-tab>
+  </van-tabs>
+</view> -->
+

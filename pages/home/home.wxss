@@ -1,0 +1,31 @@
+.search{
+  height: 60rpx;
+  display: flex;
+}
+.search-nav{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 60rpx;
+  background-color: #efefef;
+  margin: 10rpx 20rpx;
+
+}
+.search-nav image{
+  height: 36rpx;
+  width: 36rpx;
+  margin-left: 20rpx;
+}
+.search-nav text{
+  margin-left: 20rpx;
+  color: #C8C9CC;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.tabs{
+  position: relative;
+  top: 10rpx;
+}

@@ -1,0 +1,6 @@
+<van-nav-bar 
+  border="{{false}}"
+  title="demo跳转页面"
+  placeholder
+  fixed
+/>
